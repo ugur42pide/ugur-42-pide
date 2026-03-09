@@ -1,8 +1,9 @@
-"use client"; // Mobile menü state'i (açık/kapalı) için Client Component olması şarttır.
+"use client";
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X, Utensils } from "lucide-react";
+import Image from "next/image";
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,12 +12,16 @@ export default function Navbar() {
     <nav className="fixed w-full z-50 bg-black/90 backdrop-blur-md border-b border-neutral-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Logo Alanı */}
+          {/* Logo Alanı Güncellendi */}
           <Link href="/" className="flex items-center gap-2 group">
-            <Utensils className="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" />
-            <span className="font-bold text-2xl tracking-wider text-white">
-              UĞUR 42 <span className="text-red-600">PİDE</span>
-            </span>
+            <Image
+              src="/logo.jpg"
+              alt="Uğur 42 Pide Logo"
+              width={180}
+              height={60}
+              className="w-auto h-12 sm:h-14 object-contain group-hover:scale-105 transition-transform duration-300"
+              priority
+            />
           </Link>
 
           {/* Masaüstü Menü */}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
@@ -6,9 +7,17 @@ export default function Footer() {
     <footer className="bg-neutral-950 border-t border-neutral-900 py-10 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <h3 className="text-xl font-bold text-white mb-4">
-            UĞUR 42 <span className="text-red-600">PİDE</span>
-          </h3>
+          {/* Yazı yerine Logo eklendi */}
+          <Link href="/" className="inline-block mb-4">
+            <Image
+              src="/logo.jpg"
+              alt="Uğur 42 Pide Logo"
+              width={240}
+              height={80}
+              className="w-auto h-16 object-contain"
+              priority
+            />
+          </Link>
           <p className="text-neutral-400 text-sm">
             Geleneksel lezzetler, modern hizmet anlayışıyla kapınızda.
           </p>
