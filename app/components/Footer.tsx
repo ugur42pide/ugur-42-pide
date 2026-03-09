@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Yazı yerine Logo eklendi */}
           <Link href="/" className="inline-block mb-4">
             <Image
-              src="/logo.jpg"
+              src="/logo.png"
               alt="Uğur 42 Pide Logo"
               width={240}
               height={80}

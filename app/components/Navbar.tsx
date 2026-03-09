@@ -15,7 +15,7 @@ export default function Navbar() {
           {/* Logo Alanı Güncellendi */}
           <Link href="/" className="flex items-center gap-2 group">
             <Image
-              src="/logo.jpg"
+              src="/logo.png"
               alt="Uğur 42 Pide Logo"
               width={180}
               height={60}
