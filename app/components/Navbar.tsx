@@ -14,13 +14,12 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           {/* Logo Alanı Güncellendi */}
           <Link href="/" className="flex items-center gap-2 group">
-            <Image
+            <img
               src="/logo.png"
               alt="Uğur 42 Pide Logo"
               width={180}
               height={60}
               className="w-auto h-12 sm:h-14 object-contain group-hover:scale-105 transition-transform duration-300"
-              priority
             />
           </Link>
 
