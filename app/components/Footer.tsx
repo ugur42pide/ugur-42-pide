@@ -12,8 +12,6 @@ export default function Footer() {
             <img
               src="/logo.png"
               alt="Uğur 42 Pide Logo"
-              width={240}
-              height={80}
               className="w-auto h-16 object-contain"
             />
           </Link>

@@ -17,8 +17,6 @@ export default function Navbar() {
             <img
               src="/logo.png"
               alt="Uğur 42 Pide Logo"
-              width={180}
-              height={60}
               className="w-auto h-12 sm:h-14 object-contain group-hover:scale-105 transition-transform duration-300"
             />
           </Link>
