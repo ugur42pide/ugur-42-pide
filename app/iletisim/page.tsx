@@ -57,26 +57,26 @@ export default function IletisimPage() {
             </div>
             <div>
               <h3 className="text-xl font-bold text-white mb-1">Adresimiz</h3>
-              <p className="text-neutral-300 text-lg">İzmir, Türkiye</p>
+              <p className="text-neutral-300 text-lg">
+                Dalyan, 4218. Sk. No:59A
+              </p>
               <p className="text-neutral-500 text-sm mt-1">
-                (Detaylı açık adresinizi buraya yazabilirsiniz)
+                35900 Çeşme / İzmir
               </p>
             </div>
           </div>
         </div>
 
-        {/* Harita Alanı (Placeholder) */}
-        <div className="bg-neutral-900 rounded-2xl border border-neutral-800 overflow-hidden flex items-center justify-center min-h-100 relative group">
-          {/* Gelecekte buraya Google Maps Iframe kodunu yapıştırabilirsiniz */}
-          <div className="absolute inset-0 bg-neutral-800 flex flex-col items-center justify-center">
-            <MapPin className="h-12 w-12 text-red-600 mb-4 group-hover:scale-110 transition-transform" />
-            <p className="text-neutral-400 font-medium">
-              Google Haritalar Görünümü (Placeholder)
-            </p>
-            <p className="text-neutral-600 text-sm mt-2">
-              Iframe kodunuzu buraya ekleyin
-            </p>
-          </div>
+        {/* Canlı Google Harita Alanı */}
+        <div className="bg-neutral-900 rounded-2xl border border-neutral-800 overflow-hidden relative min-h-[400px]">
+          <iframe
+            src="https://maps.google.com/maps?q=U%C4%9FUR42+P%C4%B0DE,+Dalyan,+4218.+Sk.+no:59A,+35900+%C3%87e%C5%9Fme%2F%C4%B0zmir&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            className="absolute inset-0 w-full h-full"
+            style={{ border: 0 }}
+            allowFullScreen={true}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </div>
