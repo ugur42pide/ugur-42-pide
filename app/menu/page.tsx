@@ -1,9 +1,6 @@
 import MenuItem from "../components/MenuItem";
 import { prisma } from "@/lib/prisma";
 
-// Sayfanın her zaman en güncel veriyi çekmesi için önbelleği (cache) kapatıyoruz
-export const dynamic = "force-dynamic";
-
 export default async function MenuPage() {
   // Veritabanından kategorileri ve o kategorilere ait tüm ürünleri (items) çekiyoruz
   const categories = await prisma.category.findMany({
