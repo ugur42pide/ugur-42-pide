@@ -54,8 +54,9 @@ export default function Navbar() {
           {/* Mobil Hamburger Butonu */}
           <div className="md:hidden flex items-center">
             <button
+              aria-label="Menüyü Aç"
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-300 hover:text-white"
+              className="text-gray-300 hover:text-white focus:outline-none"
             >
               {isOpen ? (
                 <X className="h-8 w-8 text-red-600" />

@@ -200,7 +200,7 @@ export default async function AdminPage() {
 
               <div className="space-y-4">
                 {cat.items.length === 0 ? (
-                  <p className="text-neutral-500 text-sm italic">
+                  <p className="text-neutral-400 text-sm italic">
                     Bu kategoride henüz ürün yok.
                   </p>
                 ) : (

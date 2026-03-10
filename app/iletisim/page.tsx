@@ -60,7 +60,7 @@ export default function IletisimPage() {
               <p className="text-neutral-300 text-lg">
                 Dalyan, 4218. Sk. No:59A
               </p>
-              <p className="text-neutral-500 text-sm mt-1">
+              <p className="text-neutral-400 text-sm mt-1">
                 35900 Çeşme / İzmir
               </p>
             </div>
