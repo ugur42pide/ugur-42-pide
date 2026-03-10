@@ -39,6 +39,7 @@ export default async function MenuPage() {
                       title={item.name}
                       description={item.description || ""}
                       price={item.price}
+                      imageUrl={item.imageUrl} /* YENİ EKLENEN KISIM BURASI */
                     />
                   ))}
                 </div>

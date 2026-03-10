@@ -2,28 +2,40 @@ interface MenuItemProps {
   title: string;
   description: string;
   price: string;
+  imageUrl?: string | null; // Resim özelliği eklendi
 }
 
-export default function MenuItem({ title, description, price }: MenuItemProps) {
+export default function MenuItem({
+  title,
+  description,
+  price,
+  imageUrl,
+}: MenuItemProps) {
   return (
-    <div className="bg-neutral-900 border border-neutral-800 p-6 rounded-xl hover:border-red-600 transition-all duration-300 group cursor-pointer flex justify-between items-center">
-      <div className="flex-1 pr-4">
-        <div className="flex justify-between items-start mb-1">
-          <h3 className="text-xl font-semibold text-white group-hover:text-red-500 transition-colors">
-            {title}
-          </h3>
-          {/* Fiyat Alanı */}
-          <span className="text-red-500 font-bold ml-2 whitespace-nowrap bg-red-500/10 px-2 py-1 rounded-md">
+    <div className="bg-neutral-900 rounded-2xl overflow-hidden border border-neutral-800 hover:border-red-600 transition-colors group">
+      {/* Eğer resim varsa üst tarafta gösteriyoruz */}
+      {imageUrl && (
+        <div className="h-48 w-full overflow-hidden">
+          <img
+            src={imageUrl}
+            alt={title}
+            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          />
+        </div>
+      )}
+
+      <div className="p-6">
+        <div className="flex justify-between items-start mb-2">
+          <h3 className="text-xl font-bold text-white">{title}</h3>
+          <span className="text-lg font-bold text-red-500 bg-red-500/10 px-3 py-1 rounded-full">
             {price}
           </span>
         </div>
-        {/* Ürüne özel açıklama alanı */}
-        <p className="text-neutral-400 text-sm mt-1">{description}</p>
-      </div>
-
-      {/* Artı (Sepete Ekle) Butonu */}
-      <div className="h-10 w-10 shrink-0 bg-neutral-950 rounded-full flex items-center justify-center group-hover:bg-red-600 transition-colors">
-        <span className="text-2xl text-red-600 group-hover:text-white">+</span>
+        {description && (
+          <p className="text-neutral-400 text-sm leading-relaxed">
+            {description}
+          </p>
+        )}
       </div>
     </div>
   );
