@@ -1,0 +1,30 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_PUBLIC_URL")
+}
+
+// 1. Çekmece: Kategoriler (Örn: Pideler, İçecekler)
+model Category {
+  id        String     @id @default(cuid())
+  name      String
+  items     MenuItem[]
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+}
+
+// 2. Çekmece: Ürünler (Örn: Etliekmek, Ayran)
+model MenuItem {
+  id          String   @id @default(cuid())
+  name        String
+  price       String
+  description String?  // Soru işareti, bu alanın boş bırakılabileceğini gösterir
+  imageUrl    String?  // Resim linkini tutacağımız yer
+  categoryId  String
+  category    Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
