@@ -1,68 +1,67 @@
 import MenuItem from "../components/MenuItem";
 
-// Ürünler, fiyatlar ve özel açıklamalar objelere ayrıldı
 const menuData = [
   {
     category: "Pideler & Lahmacun",
     items: [
       {
         name: "Etliekmek",
-        price: "180 ₺",
+        price: "350 ₺",
         description: "Ustalarımızın özel tarifiyle, çıtır çıtır.",
       },
       {
         name: "Bıçakarası",
-        price: "200 ₺",
+        price: "380 ₺",
         description: "Ustalarımızın özel tarifiyle, bol malzemeli.",
       },
       {
         name: "Mevlana",
-        price: "190 ₺",
+        price: "350 ₺",
         description: "Ustalarımızın özel tarifiyle.",
       },
       {
         name: "Lahmacun",
-        price: "80 ₺",
+        price: "200 ₺",
         description: "Taş fırında pişen çıtır lezzet.",
       },
       {
         name: "Kıymalı Pide",
-        price: "170 ₺",
+        price: "300 ₺",
         description: "Ustalarımızın özel tarifiyle.",
       },
       {
         name: "Kıymalı Kaşarlı",
-        price: "190 ₺",
+        price: "350 ₺",
         description: "Ustalarımızın özel tarifiyle.",
       },
       {
         name: "Peynirli Pide",
-        price: "160 ₺",
+        price: "300 ₺",
         description: "Tam kıvamında peynir şöleni.",
       },
       {
         name: "Töngül Pide",
-        price: "180 ₺",
+        price: "200 ₺",
         description: "Özel yöresel lezzet.",
       },
       {
         name: "Kuşbaşılı Pide",
-        price: "210 ₺",
+        price: "380 ₺",
         description: "Ustalarımızın özel tarifiyle.",
       },
       {
         name: "Kuşkaş Pide",
-        price: "230 ₺",
+        price: "380 ₺",
         description: "Kuşbaşı et ve kaşar uyumu.",
       },
       {
         name: "Pizza Sucuk Kaşar",
-        price: "200 ₺",
+        price: "350 ₺",
         description: "Bol malzemeli pide pizza.",
       },
       {
         name: "Pizza Vegan",
-        price: "190 ₺",
+        price: "350 ₺",
         description: "Bitkisel içerikli özel lezzet.",
       },
     ],
@@ -72,42 +71,42 @@ const menuData = [
     items: [
       {
         name: "Ekmek Arası Köfte",
-        price: "140 ₺",
+        price: "250 ₺",
         description: "Izgara ateşinde pişmiş leziz köfteler.",
       },
       {
         name: "Ekmek Arası Tavuk",
-        price: "120 ₺",
+        price: "200 ₺",
         description: "Özel soslu ızgara tavuk.",
       },
       {
         name: "Ödemiş Köfte",
-        price: "180 ₺",
+        price: "350 ₺",
         description: "Tereyağlı, özel pideli Ödemiş köfte.",
       },
       {
         name: "Izgara Köfte",
-        price: "170 ₺",
+        price: "350 ₺",
         description: "Porsiyon ızgara köfte, garnitür ile.",
       },
       {
         name: "Kiremitte Köfte",
-        price: "190 ₺",
+        price: "350 ₺",
         description: "Kiremitte domates soslu, kaşarlı.",
       },
       {
         name: "Izgara Tavuk Kanat",
-        price: "160 ₺",
+        price: "300 ₺",
         description: "Nar gibi kızarmış ızgara kanat.",
       },
       {
         name: "Izgara Tavuk Şiş",
-        price: "150 ₺",
+        price: "300 ₺",
         description: "Lokum gibi tavuk şiş.",
       },
       {
         name: "Izgara Tavuk İncik",
-        price: "160 ₺",
+        price: "300 ₺",
         description: "Kemiksiz, sulu tavuk incik.",
       },
     ],
@@ -115,17 +114,17 @@ const menuData = [
   {
     category: "İçecekler",
     items: [
-      { name: "Ayran", price: "25 ₺", description: "Soğuk içiniz." },
+      { name: "Ayran", price: "50 ₺", description: "Soğuk içiniz." },
       {
         name: "Şalgam",
-        price: "30 ₺",
+        price: "80 ₺",
         description: "Acılı veya acısız seçenekleriyle.",
       },
-      { name: "Kola", price: "35 ₺", description: "Soğuk içiniz." },
-      { name: "Fanta", price: "35 ₺", description: "Soğuk içiniz." },
-      { name: "Sprite", price: "35 ₺", description: "Soğuk içiniz." },
-      { name: "Limonata", price: "35 ₺", description: "Ferahlatıcı lezzet." },
-      { name: "Su", price: "10 ₺", description: "Pet şişe." },
+      { name: "Kola", price: "80 ₺", description: "Soğuk içiniz." },
+      { name: "Fanta", price: "80 ₺", description: "Soğuk içiniz." },
+      { name: "Sprite", price: "80 ₺", description: "Soğuk içiniz." },
+      { name: "Limonata", price: "80 ₺", description: "Ferahlatıcı lezzet." },
+      { name: "Su", price: "20 ₺", description: "Pet şişe." },
     ],
   },
 ];
