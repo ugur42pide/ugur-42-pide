@@ -67,7 +67,7 @@ export default function IletisimPage() {
           </div>
         </div>
 
-        {/* Canlı Google Harita Alanı */}
+        {/* Google Harita Alanı */}
         <div className="bg-neutral-900 rounded-2xl border border-neutral-800 overflow-hidden relative min-h-100">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186!2d26.3106875!3d38.3556734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bb7bebcc20590d%3A0x2e323f75411b256c!8m2!3d38.3560724!4d26.310707!16s%2Fg%2F11v0m_8qxb?hl=tr"
