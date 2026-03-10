@@ -68,7 +68,7 @@ export default function IletisimPage() {
         </div>
 
         {/* Canlı Google Harita Alanı */}
-        <div className="bg-neutral-900 rounded-2xl border border-neutral-800 overflow-hidden relative min-h-[400px]">
+        <div className="bg-neutral-900 rounded-2xl border border-neutral-800 overflow-hidden relative min-h-100">
           <iframe
             src="https://maps.google.com/maps?q=U%C4%9FUR42+P%C4%B0DE,+Dalyan,+4218.+Sk.+no:59A,+35900+%C3%87e%C5%9Fme%2F%C4%B0zmir&t=&z=16&ie=UTF8&iwloc=&output=embed"
             className="absolute inset-0 w-full h-full"
