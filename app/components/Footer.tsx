@@ -51,7 +51,8 @@ export default function Footer() {
               (WhatsApp)
             </li>
             <li className="flex items-center gap-2">
-              <MapPin className="h-4 w-4 text-red-600" /> İzmir, Türkiye
+              <MapPin className="h-4 w-4 text-red-600" /> Dalyan, 4218. Sk.
+              No:59A 35900 Çeşme / İzmir
             </li>
           </ul>
         </div>
